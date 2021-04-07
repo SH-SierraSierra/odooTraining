@@ -25,7 +25,6 @@
     ], 
     
     'demo': [
-        
-        
+        'demo/coop_demo.xml',        
     ],
 }
