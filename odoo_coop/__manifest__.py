@@ -20,8 +20,7 @@
     'depends': ['base'],
     
     'data': [
-        
-        
+        'views/coop_views.xml',        
     ], 
     
     'demo': [
