@@ -20,12 +20,10 @@
     'depends': ['base'],
     
     'data': [
-        
-        
+        'views/course_views.xml',        
     ], 
     
     'demo': [
-        
-        
+        'demo/academy_demo.xml'
     ],
 }
