@@ -20,6 +20,9 @@
     'depends': ['base'],
     
     'data': [
+        'security/coop_security.xml',
+        'security/ir.model.access.csv',
+        'views/coop_menuitems.xml',
         'views/coop_views.xml',        
     ], 
     

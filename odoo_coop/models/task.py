@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from odoo import models, fields, api
+from odoo.exceptions import UserError, ValidationError
 
 class Task(models.Model):
     _name = 'coop.task'
@@ -27,3 +28,19 @@ class Task(models.Model):
                                            ('weekly', 'Weekly'),
                                            ('fortnightly', 'Fortnightly'),
                                            ('monthly', 'Monthly')], copy=False)
+    state = fields.Selection(string='Task State', 
+                             selection=[('draft', 'Draft'),
+                                       ('ready', 'Ready'),
+                                       ('in_progress', 'In Progress'),
+                                       ('done', 'Done')], copy=False, default='draft')
+    leader = fields.Char(string='Task Leader')
+    
+    @api.onchange('leader')
+    def _onchange_leader(self):
+        self.state = 'ready'
+        
+    @api.constrains('start_time', 'stop_time')
+    def _check_start_time_stop_time(self):
+        for record in self:
+            if record.start_time > record.stop_time:
+                raise ValidationError('Start time must be before stop time')

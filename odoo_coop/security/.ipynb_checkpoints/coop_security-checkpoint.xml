@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="group_coop_head_volunteer" model="res.groups">
+      <field name="name">Coop / Head Volunteer</field>
+    </record>
+</odoo>

@@ -11,9 +11,11 @@
                         <group>
                             <group>
                                 <field name="start_time"/>
+                                <field name="stop_time"/>
                             </group>
                             <group>
-                                <field name="stop_time"/>
+                                <field name="leader"/>
+                                <field name="state"/>
                             </group>
                         </group>
                         <notebook>

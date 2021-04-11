@@ -1,0 +1,3 @@
+id,name,model_id/id,group_id/id,perm_read,perm_write,perm_create,perm_unlink
+task_admin,task admin,model_coop_task,group_coop_admin,1,1,1,1
+task_basic_volunteer,task basic volunteer,model_coop_task,,1,1,1,0
