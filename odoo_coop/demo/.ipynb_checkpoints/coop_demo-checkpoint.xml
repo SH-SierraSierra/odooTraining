@@ -21,7 +21,7 @@
         </record>
         <record model="coop.task" id="take_inventory">
             <field name="start_time">2020-05-14 13:30:00</field>
-            <field name="stop_time">2020-05-14 17:30:00</field>
+            <field name="stop_time">2020-05-14 16:30:00</field>
             <field name="name">Taking Inventory</field>
             <field name="task_type">inventory</field>
             <field name="description">Taking inventory of everything in the store</field>
@@ -29,7 +29,7 @@
             <field name="repeating_type">monthly</field>
         </record>
         <record model="coop.task" id="decorate">
-            <field name="start_time">2020-05-14 17:35:00</field>
+            <field name="start_time">2020-05-14 16:35:00</field>
             <field name="stop_time">2020-05-14 17:00:00</field>
             <field name="name">Decorate store</field>
             <field name="task_type">other</field>
