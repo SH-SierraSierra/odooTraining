@@ -33,6 +33,7 @@ class Task(models.Model):
                                        ('ready', 'Ready'),
                                        ('in_progress', 'In Progress'),
                                        ('done', 'Done')], copy=False, default='draft')
+    
     leader = fields.Many2one(comodel_name='res.partner', string='Task Lead Volunteer')
     
     volunteers = fields.Many2many(comodel_name='res.partner', string='Volunteers')
