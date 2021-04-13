@@ -54,7 +54,7 @@
             <field name="name">coop.task.gantt</field>
             <field name="model">coop.task</field>
             <field name="arch" type="xml">
-                <gantt date_start="start_time" date_stop="stop_time" default_group_by="leader">
+                <gantt string="Gantt View" date_start="start_time" date_stop="stop_time" default_group_by="leader">
                 </gantt>
             </field>
         </record>
