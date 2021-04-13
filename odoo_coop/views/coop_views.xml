@@ -22,6 +22,9 @@
                             <page string="Description">
                                 <field name="description"/>
                             </page>
+                            <page string="Volunteers">
+                                <field name="volunteers"/>
+                            </page>
                         </notebook>
                     </sheet>
                 </form>
@@ -47,5 +50,13 @@
                 </search>
             </field>
         </record>
-    </data>
+        <record model="ir.ui.view" id="task_view_gantt">
+            <field name="name">coop.task.gantt</field>
+            <field name="model">coop.task</field>
+            <field name="arch" type="xml">
+                <gantt date_start="start_time" date_stop="end_time" default_group_by="leader">
+                </gantt>
+            </field>
+        </record>
+    </data> 
 </odoo>
