@@ -25,8 +25,8 @@
                                     <span t-field="doc.end_date"/>
                                 </t>
                             </div>
-                            <div t-if="doc.instructor_id" class="col-auto mws-100 mb-2">
-                                <strong>Instructor</strong>
+                            <div t-if="doc.instructor_id" class="col-auto mw-100 mb-2">
+                                <strong>Instructor:</strong>
                                 <span t-field="doc.instructor_id.name"/>
                             </div>
                         </div>
@@ -58,7 +58,6 @@
                     </div>
                 </t>
             </t>
-        </t>
-        
+        </t>   
     </template>
 </odoo>
