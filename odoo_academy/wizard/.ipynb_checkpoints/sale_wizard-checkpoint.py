@@ -4,8 +4,7 @@ from odoo import models, fields, api
 
 class SaleWizard(models.TransientModel):
     _name = 'academy.sale.wizard'
-    _description = 'Wizard: Quick Sale Orders for Session Students'
-    
+    _description = 'Wizard: Quick Sale Orders for Session Students'    
     
     def _default_session(self):
         return self.env['academy.session'].browse(self._context.get('active_id'))

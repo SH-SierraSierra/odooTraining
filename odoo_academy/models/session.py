@@ -36,7 +36,7 @@ class Session(models.Model):
                                       ('cancelled', 'Cancelled')],
                             default='draft',
                             required=True)
-    total_price = fields.Float(string="Total Price", 
+    total_price = fields.Float(string='Total Price', 
                               related='course_id.total_price')
     
     @api.depends('start_date', 'duration')
