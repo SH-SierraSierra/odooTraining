@@ -8,6 +8,7 @@
         -Courses
         -Sessions
         -Attendees
+        -Sales
     """,
     
     'author': 'Odoo',
