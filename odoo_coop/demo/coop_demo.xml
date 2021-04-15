@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+        <record model="coop.task" id="unload_grocery">
+            <field name="start_time">2020-05-14 09:00:00</field>
+            <field name="stop_time">2020-05-14 10:30:00</field>
+            <field name="name">Unloading Fresh Produce</field>
+            <field name="task_type">unloading</field>
+            <field name="description"> Unloading fresh produce from our vendor</field>
+            <field name="is_repeating_task">true</field>
+            <field name="repeating_type">weekly</field>
+        </record>
+        <record model="coop.task" id="restock_grocery">
+            <field name="start_time">2020-05-14 10:35:00</field>
+            <field name="stop_time">2020-05-14 13:00:00</field>
+            <field name="name">Restocking Fresh Produce</field>
+            <field name="task_type">restocking</field>
+            <field name="description"> Restocking fresh produce from our vendor using FIFO system</field>
+            <field name="is_repeating_task">true</field>
+            <field name="repeating_type">weekly</field>
+        </record>
+        <record model="coop.task" id="take_inventory">
+            <field name="start_time">2020-05-14 13:30:00</field>
+            <field name="stop_time">2020-05-14 16:30:00</field>
+            <field name="name">Taking Inventory</field>
+            <field name="task_type">inventory</field>
+            <field name="description">Taking inventory of everything in the store</field>
+            <field name="is_repeating_task">true</field>
+            <field name="repeating_type">monthly</field>
+        </record>
+        <record model="coop.task" id="decorate">
+            <field name="start_time">2020-05-14 16:35:00</field>
+            <field name="stop_time">2020-05-14 17:00:00</field>
+            <field name="name">Decorate store</field>
+            <field name="task_type">other</field>
+            <field name="description">Decorate store for grand opening</field>
+            <field name="is_repeating_task">false</field>
+            <field name="repeating_type">never</field>
+        </record>        
+    </data>
+</odoo>
